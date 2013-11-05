@@ -45,6 +45,7 @@ class Inchoo_Stripe_Model_Payment extends Mage_Payment_Model_Method_Cc
 					'name'				=>	$billing->getName(),
 					'address_line1'		=>	$billing->getStreet(1),
 					'address_line2'		=>	$billing->getStreet(2),
+					'address_city'		=>  	$billing->getCity(),
 					'address_zip'		=>	$billing->getPostcode(),
 					'address_state'		=>	$billing->getRegion(),
 					'address_country'	=>	$billing->getCountry(),
